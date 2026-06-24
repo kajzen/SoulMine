@@ -1,22 +1,58 @@
-# SoulMine - 2D Game Engine
+﻿# SoulMine
 
-The project includes a custom 2D engine and a demo RPG game that utilizes mechanics from Soul Knight and Minecraft.
+A 2D RPG game with a custom-built game engine, inspired by Soul Knight and Minecraft.
 
-## Project Structure
-- cz.cvut.fel.pjv.engine: System core (rendering, physics, object management, I/O operations).
-- cz.cvut.fel.pjv.game: Implementation of the SoulMine game (entities, items, game world, UI).
-  - controller: Management of the game loop, collisions, and inputs.
-  - model: Definitions of specific heroes, enemies, and items.
-  - view: Visual scenes and graphical interface.
+Built from scratch in Java as a university project at CTU FEL — the engine handles rendering, physics, collision, and I/O, while the game layer implements the actual gameplay on top of it.
+
+## Tech Stack
+
+- **Java 21** + **JavaFX**
+- **Maven**
+- Custom 2D engine (no third-party game frameworks)
+
+## Architecture
+
+```
+cz.cvut.fel.pjv/
+├── engine/
+│   ├── graphics/     # Rendering, animation
+│   ├── physics/      # Collision detection
+│   ├── io/           # Input handling, level loading, serialization
+│   └── model/        # Base entity and game object classes
+└── game/
+    ├── controller/   # Game loop, crafting system
+    ├── model/        # Heroes, enemies, items, world tiles
+    └── view/         # Game UI and scenes
+```
+
+## Gameplay
+
+Dungeon-crawler RPG with crafting mechanics. Fight through levels, collect items, craft gear, and reach the portal.
+
+**Enemies:** Witch · Enderman · Ifrit  
+**Items:** Weapons, materials, crafting ingredients  
+**World:** Procedural levels with lava tiles, crafting tables, and portals
 
 ## Controls
-- WASD: Move
-- Left Mouse Button: Attack
-- E: Interact (Loot, Crafting, NPC)
-- SPACE: Use items / Confirm in menus
-- ESC: Pause
+
+| Key | Action |
+|-----|--------|
+| `WASD` | Move |
+| `Left Mouse Button` | Attack |
+| `E` | Interact (loot, craft, NPC) |
+| `SPACE` | Use item / Confirm |
+| `ESC` | Pause |
+
+## Getting Started
+
+Requirements: Java 21+, Maven
+
+```bash
+git clone https://github.com/kajzen/SoulMine.git
+cd SoulMine
+mvn clean javafx:run
+```
 
 ## Author
-Name: Mykhailo Sydorov 
 
-
+Mykhailo Sydorov — [CTU FEL](https://fel.cvut.cz), Software & Information Technology
