@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/29296879/README.md)
 # SoulMine - 2D Game Engine
 
 The project includes a custom 2D engine and a demo RPG game that utilizes mechanics from Soul Knight and Minecraft.
@@ -18,7 +17,6 @@ The project includes a custom 2D engine and a demo RPG game that utilizes mechan
 - ESC: Pause
 
 ## Author
-Name: Mykhailo Sydorov
-Username: sydormyk 
+Name: Mykhailo Sydorov 
 
 
